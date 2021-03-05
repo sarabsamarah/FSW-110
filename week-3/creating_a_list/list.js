@@ -21,7 +21,7 @@ const names = [
     "rick",
     "emily"
 ]
-var myList = document.getElementById("names")
+var myList = document.createElement("ul")
 myList.textContent = "List Of Names"
 
 for (var i = 0; i < names.length; i++) {
