@@ -16,6 +16,9 @@ box.addEventListener("mouseover" , function(){
 box.addEventListener("dblclick", function(){
     box.style.backgroundColor= "red"
 })
+box.addEventListener("wheel", function(){ 
+    box.style.backgroundColor= "orange"
+})
 box.addEventListener("mouseout" , function(){
     box.style.backgroundColor= "purple"
 });
