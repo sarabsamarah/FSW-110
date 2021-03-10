@@ -3,7 +3,8 @@ box.textContent = "Color Cube",
 box.style.fontSize = '50px',
 box.classList.add("box");
 document.body.append(box);
-box.addEventListener("mouseover" , function(){
+
+box.addEventListener("mousedown" , function(){
     box.style.backgroundColor= "green"
 })
 box.addEventListener("mouseup" , function(){
@@ -17,7 +18,9 @@ box.addEventListener("dblclick", function(){
 })
 box.addEventListener("mouseout" , function(){
     box.style.backgroundColor= "purple"
-});document.onkeydown = function() {
+});
+
+document.onkeydown = function() {
     var keyCode = window.event ? window.event.keyCode : event.which;
     color(keyCode);
 }
