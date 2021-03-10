@@ -5,22 +5,22 @@ box.classList.add("box");
 document.body.append(box);
 
 box.addEventListener("mousedown" , function(){
-    box.style.backgroundColor= "green"
+    box.style.backgroundColor= "red"
 })
 box.addEventListener("mouseup" , function(){
-    box.style.backgroundColor= "blue"
-})
-box.addEventListener("mouseover" , function(){
     box.style.backgroundColor= "yellow"
 })
+box.addEventListener("mouseover" , function(){
+    box.style.backgroundColor= "blue"
+})
 box.addEventListener("dblclick", function(){
-    box.style.backgroundColor= "red"
+    box.style.backgroundColor= "green"
 })
 box.addEventListener("wheel", function(){ 
     box.style.backgroundColor= "orange"
 })
 box.addEventListener("mouseout" , function(){
-    box.style.backgroundColor= "purple"
+    box.style.backgroundColor= "orange"
 });
 
 document.onkeydown = function() {
@@ -34,8 +34,8 @@ function color(keyCode) {
         box.style.backgroundColor = "red";
     }else if (keyCode == 89) {
         box.style.backgroundColor = "yellow";
-    }else if (keyCode == 80) {
-        box.style.backgroundColor = "purple";
+    }else if (keyCode == 79) {
+        box.style.backgroundColor = "orange";
     } else if (keyCode == 71) {
         box.style.backgroundColor = "green";
     }
