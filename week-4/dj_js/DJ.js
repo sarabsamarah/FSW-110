@@ -1,6 +1,6 @@
 var box = document.createElement ("box")
 box.textContent = "Color Cube",
-box.style.fontSize = '50px',
+box.style.fontSize = '250px',
 box.classList.add("box");
 document.body.append(box);
 
@@ -17,9 +17,6 @@ box.addEventListener("dblclick", function(){
     box.style.backgroundColor= "green"
 })
 box.addEventListener("wheel", function(){ 
-    box.style.backgroundColor= "orange"
-})
-box.addEventListener("mouseout" , function(){
     box.style.backgroundColor= "orange"
 });
 
@@ -40,3 +37,9 @@ function color(keyCode) {
         box.style.backgroundColor = "green";
     }
 }
+
+
+window.addEventListener("wheel", function(){
+box.style.backgroundColor= "orange"
+});
+
