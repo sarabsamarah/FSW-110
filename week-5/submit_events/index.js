@@ -1,7 +1,7 @@
 
-function myFunction() {
-    alert("Please follow instruction below! Good Luck!")
-  }
+// function myFunction() {
+//     alert("Please follow instruction below! Good Luck!")
+//   }
 
   // // function confirming() {
   //   var a = document.getElementById("nameText").value;
@@ -13,19 +13,12 @@ function myFunction() {
   //   // alert("Please confirm: " + b);
     
   // // }
-  function confirming() {
+  function submit() {
     var a = document.getElementById("nameText").value;
     var b = document.getElementById("lastText").value;
     var c = document.getElementById("phoneNum").value;
-    result = a + b+ c
-    alert(result);
-    }
-
-  
-  
-  function submit()
-  {
-      alert("click ok to finalize entry");
+    result = (a+ " " + b+  " "+ c+ " ");
+      alert("Please confirm:  "+ result);
       location.reload();
   }
 
