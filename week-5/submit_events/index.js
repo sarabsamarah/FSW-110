@@ -17,7 +17,8 @@ function myFunction() {
     var a = document.getElementById("nameText").value;
     var b = document.getElementById("lastText").value;
     var c = document.getElementById("phoneNum").value;
-    alert("Please confirm: "  + a  +  b  +   c);
+    result = a + b+ c
+    alert(result);
     }
 
   
