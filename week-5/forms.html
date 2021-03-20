@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+<link rel= "stylesheet" href="forms.css">
+
+
+<body>
+    <div id=formBox>
+
+	<form name= 'form'>
+
+        <h3>Vacation Survey</h3>
+
+        <input type="text" id= "firstName"  placeholder="First Name" required />
+        <input type="text" id="lastName" placeholder="Last Name" required />
+        <input type="number" id="age"  placeholder="Age" required /><br>
+        Female: <input type="radio" id="Gender" value='Female'/>
+        Male: <input type="radio" id="Gender" value='Male'/>
+        Non-Binary<input type="radio" id="Gender" value='Non-Binary'/>
+        <h4>If you could pick one of the following destination vacations, where would it be?</h4>
+        <select name= "option" required>
+            <option value="Mykonos, Greece">Mykonos, Greece</option>
+            <option value="Venice, Italy">Venice, Italy</option>
+            <option value="Toulouse, France">Toulouse, France</option>
+        </select>
+        
+        
+        <h4>Any dietary restrictions we should know about?</h4>
+        Vegan<input type="checkbox" id="diet" value="Vegan">
+        Gluten Free<input type="checkbox" id="diet" value="Gluten Free">
+        Keto<input type="checkbox" id="diet" value="Keto">
+        <button id="button" name="submit">submit</button>
+    </form>
+</div>
+
+
+
+	<script src="forms.js"></script>
+</body>
+
+</html>
