@@ -15,9 +15,9 @@
         <input type="text" id= "firstName"  placeholder="First Name" required />
         <input type="text" id="lastName" placeholder="Last Name" required />
         <input type="number" id="age"  placeholder="Age" required /><br>
-        Female: <input type="radio" id="Gender" value='Female'/>
-        Male: <input type="radio" id="Gender" value='Male'/>
-        Non-Binary<input type="radio" id="Gender" value='Non-Binary'/>
+        Female: <input type="radio" id="Gender" value='Female'name="yes"/>
+        Male: <input type="radio" id="Gender" value='Male' name="yes"/>
+        Non-Binary<input type="radio" id="Gender" value='Non-Binary' name="yes"/>
         <h4>If you could pick one of the following destination vacations, where would it be?</h4>
         <select name= "option" required>
             <option value="Mykonos, Greece">Mykonos, Greece</option>
@@ -27,9 +27,9 @@
         
         
         <h4>Any dietary restrictions we should know about?</h4>
-        Vegan<input type="checkbox" id="diet" value="Vegan">
-        Gluten Free<input type="checkbox" id="diet" value="Gluten Free">
-        Keto<input type="checkbox" id="diet" value="Keto">
+        Vegan<input type="radio" id="diet" value="Vegan" name="select">
+        Gluten Free<input type="radio" id="diet" value="Gluten Free" name="select">
+        Keto<input type="radio" id="diet" value="Keto" name="select">
         <button id="button" name="submit">submit</button>
     </form>
 </div>
